@@ -1,0 +1,27 @@
+{
+  "name": "food-fight",
+  "version": "1.0.0",
+  "description": "A 2D multiplayer web browser game inspired by the 1986 Atari 7800 Food Fight game",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["game", "multiplayer", "phaser", "food-fight"],
+  "author": "Benji Franck",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "phaser": "^3.60.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "concurrently": "^8.2.2"
+  }
+}

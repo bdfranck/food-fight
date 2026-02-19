@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Fight - 2D Multiplayer Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Arial', sans-serif;
+    }
+    #game-container {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    #info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      max-width: 300px;
+    }
+    #info h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+    #info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">
+    <h2>🍕 Food Fight</h2>
+    <p><strong>Controls:</strong> Arrow Keys or WASD to move, Space to throw food</p>
+    <p><strong>Players Online:</strong> <span id="player-count">0</span></p>
+  </div>
+  <div id="game-container"></div>
+  <script type="module" src="/client/main.js"></script>
+</body>
+</html>
